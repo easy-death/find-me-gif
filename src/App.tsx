@@ -35,7 +35,7 @@ function saveHistory({query, page, gifs}: HistoryState){
   const params = new URLSearchParams();
   if (query !== '') params.append('query', query);
   if (page !== 1) params.append('page', page.toString());
-  window.history.pushState({query, page, gifs} as HistoryState, '', "/?" + params.toString());
+  window.history.pushState({query, page, gifs} as HistoryState, '', "/#" + params.toString());
 }
 
 
@@ -96,7 +96,7 @@ function App() {
   });
   // restore local vars from url
   useEffectOnce(() => {
-    const params = new URLSearchParams(window.location.search);
+    const params = new URLSearchParams(window.location.hash.slice(1));
     const q = params.get('query') ?? '';
     const p = parseInt(params.get('page') ?? '1');
     setInputText(q);
