@@ -1,6 +1,7 @@
 {
     "name": "find-me-gif",
     "version": "0.1.0",
+    "homepage": "https://easy-death.github.io/find-me-gif",
     "private": true,
     "dependencies": {
         "@emotion/react": "^11.10.4",
@@ -31,7 +32,9 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "cypress:open": "cypress open"
+        "cypress:open": "cypress open",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
@@ -54,6 +57,7 @@
     "devDependencies": {
         "@types/lodash": "^4.14.186",
         "@types/react-helmet": "^6.1.5",
-        "cypress": "^10.10.0"
+        "cypress": "^10.10.0",
+        "gh-pages": "^4.0.0"
     }
 }
