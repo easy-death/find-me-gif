@@ -35,7 +35,7 @@ function saveHistory({query, page, gifs}: HistoryState){
   const params = new URLSearchParams();
   if (query !== '') params.append('query', query);
   if (page !== 1) params.append('page', page.toString());
-  window.history.pushState({query, page, gifs} as HistoryState, '', "/#" + params.toString());
+  window.history.pushState({query, page, gifs} as HistoryState, '', window.location.pathname + "#" + params.toString());
 }
 
 
