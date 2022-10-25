@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/find-me-gif/static/css/main.396ddd10.css",
+    "main.js": "/find-me-gif/static/js/main.70a8085e.js",
+    "static/js/787.08c1dabc.chunk.js": "/find-me-gif/static/js/787.08c1dabc.chunk.js",
+    "index.html": "/find-me-gif/index.html",
+    "main.396ddd10.css.map": "/find-me-gif/static/css/main.396ddd10.css.map",
+    "main.70a8085e.js.map": "/find-me-gif/static/js/main.70a8085e.js.map",
+    "787.08c1dabc.chunk.js.map": "/find-me-gif/static/js/787.08c1dabc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.396ddd10.css",
+    "static/js/main.70a8085e.js"
+  ]
+}
