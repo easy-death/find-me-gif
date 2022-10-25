@@ -1,38 +1,55 @@
 .App {
-  text-align: center;
+    text-align: center;
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(124, 140, 255, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.BaseInput {
+    font-size: x-large;
+    font-family: 'Fuzzy bubles', sans-serif;
+    border: 2px solid #4682B4;
+    border-radius: 25px;
+    padding: 5px 15px;
+    background-color: transparent;
+    color: #4B0082;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.SearchForm {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.SearchForm a {
+    text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.SearchForm h1 {
+    color: firebrick;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.SearchForm h1>span {
+    color: gold;
+}
+
+.SearchForm.searching {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 5px;
+    margin: unset;
+}
+
+.SearchForm.searching h1 {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.SearchForm.searching>div {
+    flex-grow: 1;
 }
